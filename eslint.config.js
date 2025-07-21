@@ -16,6 +16,7 @@ export default [
         },
       },
       globals: {
+        window: "readonly", // BU SATIR EKLENDİ
         fetch: "readonly",
         document: "readonly",
         __dirname: "readonly",
@@ -30,17 +31,18 @@ export default [
     rules: {
       ...react.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
-      // özel kurallar buraya
       "react/prop-types": "off",
       "react/react-in-jsx-scope": "off",
-
-      // no-unused-vars'ı warning yap
       "no-unused-vars": "warn",
     },
     settings: {
       react: {
         version: "detect",
       },
+    },
+    env: {
+      browser: true, // Add this to enable browser globals
+      node: true, // Keep this for Node.js globals
     },
   },
   prettier,

@@ -1,0 +1,41 @@
+{
+  "stats": "4 passed, 5 failed out of 9",
+  "tests": [
+    {
+      "name": "darkMode hooku için dosya ismi doğru şekilde ayarlanmış mı?",
+      "state": "fail"
+    },
+    {
+      "name": "localStorage hooku için dosya ismi doğru şekilde ayarlanmış mı?",
+      "state": "fail"
+    },
+    {
+      "name": "darkMode hooku react hookları gibi named export olarak tanımlanmış mı? (default export olarak değil)",
+      "state": "fail"
+    },
+    {
+      "name": "darkMode hooku useLocalStorage hookunu içeriyor mu?",
+      "state": "fail"
+    },
+    {
+      "name": "localStorage hooku named export olarak tanımlanmış mı? (default export olarak değil)",
+      "state": "fail"
+    },
+    {
+      "name": "App içinde state kullanımı kaldırılmış, onun yerine useDarkMode hooku eklenmiş mi?",
+      "state": "pass"
+    },
+    {
+      "name": "Navbar.jsx deki darkMode butonu App.jsx dosyasında en üstteki div e dark-theme classını ekliyor.",
+      "state": "pass"
+    },
+    {
+      "name": "darkMode uygulamanın ilk renderında localStoragea false başlangıç değeri ile kaydediliyor.",
+      "state": "pass"
+    },
+    {
+      "name": "darkMode localStorage a her değiştiğinde kaydediliyor.",
+      "state": "pass"
+    }
+  ]
+}
